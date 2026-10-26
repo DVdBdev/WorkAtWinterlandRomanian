@@ -57,7 +57,7 @@ export const jobs: Record<LocationId, JobLocation> = {
     whatsappNumber: '32485229140',
 
     whatsappMessage:
-      'Bună ziua! Sunt interesat(ă) de locurile de muncă din Luxemburg, la Târgul de Crăciun. Aș dori mai multe informații. Numărul de persoane: [număr]. Limbile vorbite: [limbi]. Mulțumesc!',
+      'Bună ziua! Sunt interesat(ă) de locurile de muncă de la Târgul de Crăciun din Luxemburg. Aș dori mai multe informații.\nNumărul de persoane: [număr]\nLimbile vorbite: [limbi]\n\nHello! I’m interested in the jobs at the Christmas Market in Luxembourg. I’d like to know more.\nNumber of people: [number]\nLanguages spoken: [languages]\n\nMulțumesc! / Thank you!',
   },
 
   amsterdam: {
@@ -95,6 +95,6 @@ export const jobs: Record<LocationId, JobLocation> = {
     whatsappNumber: '32485229140',
 
     whatsappMessage:
-      'Bună ziua! Sunt interesat(ă) de locurile de muncă din Amsterdam, la Târgul de Crăciun. Aș dori mai multe informații. Numărul de persoane: [număr]. Limbile vorbite (olandeză/engleză): [limbi]. Mulțumesc!',
+      'Bună ziua! Sunt interesat(ă) de locurile de muncă de la Târgul de Crăciun din Amsterdam. Aș dori mai multe informații.\nNumărul de persoane: [număr]\nLimbile vorbite: [limbi]\n\nHello! I’m interested in the jobs at the Christmas Market in Amsterdam. I’d like to know more.\nNumber of people: [number]\nLanguages spoken: [languages]\n\nMulțumesc! / Thank you!',
   },
 }

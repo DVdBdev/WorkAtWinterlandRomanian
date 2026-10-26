@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises'
+import { fileURLToPath } from 'node:url'
 import QRCode from 'qrcode'
 
 const siteUrl = process.env.SITE_URL || process.argv[2]
@@ -8,7 +9,7 @@ if (!siteUrl) {
   process.exit(1)
 }
 
-const outputPath = new URL('../public/qr-code.svg', import.meta.url)
+const outputPath = fileURLToPath(new URL('../public/qr-code.svg', import.meta.url))
 await fs.mkdir(new URL('../public', import.meta.url), { recursive: true })
 await QRCode.toFile(outputPath, siteUrl, {
   type: 'svg',
@@ -20,4 +21,4 @@ await QRCode.toFile(outputPath, siteUrl, {
   },
 })
 
-console.log(`QR code generated at ${outputPath.pathname} for ${siteUrl}`)
+console.log(`QR code generated at ${outputPath} for ${siteUrl}`)
