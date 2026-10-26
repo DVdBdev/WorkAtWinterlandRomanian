@@ -1,0 +1,260 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Inter, 'Segoe UI', Arial, sans-serif;
+  color: #242122;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.55;
+  --accent: #731f27;
+  --text: #242122;
+  --muted: #625d5d;
+  --border: #e7e2e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #b77d82;
+  outline-offset: 3px;
+}
+
+.page {
+  width: min(100% - 32px, 720px);
+  margin: 0 auto;
+  padding: 44px 0 24px;
+}
+
+.page-header {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 7vw, 2.4rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.location-switcher {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 22px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #f8f7f7;
+}
+
+.location-option {
+  min-height: 42px;
+  padding: 8px 13px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #454041;
+  cursor: pointer;
+  font-size: 0.94rem;
+  font-weight: 550;
+}
+
+.location-option:hover {
+  background: #eeebeb;
+}
+
+.location-option.selected {
+  background: #fff;
+  color: var(--accent);
+  box-shadow: 0 1px 3px rgb(30 20 20 / 10%);
+}
+
+.job-content {
+  padding: 28px 0 32px;
+}
+
+.job-content > h2 {
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+}
+
+.job-description {
+  margin-top: 5px;
+  color: var(--muted);
+}
+
+.job-facts {
+  margin: 20px 0 0;
+}
+
+.job-fact {
+  display: grid;
+  grid-template-columns: minmax(125px, 0.35fr) 1fr;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.job-fact:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.job-fact dt {
+  color: var(--muted);
+}
+
+.job-fact dd {
+  margin: 0;
+  font-weight: 550;
+}
+
+.content-section {
+  margin-top: 26px;
+}
+
+.content-section h3,
+.contact-section h3 {
+  margin-bottom: 8px;
+  font-size: 1.08rem;
+  font-weight: 650;
+}
+
+.content-section ul {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.content-section li {
+  padding: 2px 0;
+}
+
+.availability-message {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.contact-section {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.contact-button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 120ms ease;
+}
+
+.contact-button:hover:not(:disabled) {
+  background: #5c1920;
+}
+
+.contact-button:disabled {
+  background: #a89d9e;
+  cursor: not-allowed;
+}
+
+.contact-note {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.page-footer span {
+  color: var(--text);
+  font-weight: 550;
+}
+
+.page-footer a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .page {
+    width: min(100% - 28px, 720px);
+    padding-top: 30px;
+  }
+
+  .location-switcher {
+    display: flex;
+    width: 100%;
+  }
+
+  .location-option {
+    flex: 1;
+    padding-inline: 8px;
+  }
+
+  .job-fact {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
