@@ -54,7 +54,7 @@ export const jobs: Record<LocationId, JobLocation> = {
       'Cunoașterea limbii engleze.',
       'Franceza sau germana constituie un avantaj.',
     ],
-    whatsappNumber: '324',
+    whatsappNumber: '32485229140',
 
     whatsappMessage:
       'Bună ziua! Sunt interesat(ă) de locurile de muncă din Luxemburg, la Târgul de Crăciun. Aș dori mai multe informații. Numărul de persoane: [număr]. Limbile vorbite: [limbi]. Mulțumesc!',
@@ -92,7 +92,7 @@ export const jobs: Record<LocationId, JobLocation> = {
       'Disponibilitate între 12 noiembrie 2026 și 5 ianuarie 2027.',
       'Cunoașterea limbii olandeze sau engleze.',
     ],
-    whatsappNumber: '',
+    whatsappNumber: '32485229140',
 
     whatsappMessage:
       'Bună ziua! Sunt interesat(ă) de locurile de muncă din Amsterdam, la Târgul de Crăciun. Aș dori mai multe informații. Numărul de persoane: [număr]. Limbile vorbite (olandeză/engleză): [limbi]. Mulțumesc!',
